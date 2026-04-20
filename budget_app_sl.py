@@ -26,9 +26,13 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+    /* Hide top menu ribbon */
+    #MainMenu { visibility: hidden; }
+    header[data-testid="stHeader"] { visibility: hidden; height: 0; }
+    .block-container { padding-top: 0.5rem !important; }
+
     [data-testid="stMetricValue"] { font-size: 1.35rem; }
     [data-testid="stMetricLabel"] { font-size: 0.78rem; color: #94a3b8; }
-    .block-container { padding-top: 1.5rem; }
     .stTabs [data-baseweb="tab"] { font-size: 0.85rem; }
     div[data-testid="stExpander"] { border: 1px solid #1e293b; border-radius: 8px; }
 </style>
